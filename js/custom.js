@@ -314,11 +314,15 @@ var ArchCode = function(){
 	}
 	
 	/* Video Popup ============ */
-	var handleVideo = function(){
+	var handleVideo = function(event){
 		/* Video responsive function */	
-		jQuery('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
-		jQuery('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');	
+		// jQuery('iframe[src*="youtube.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');
+		// jQuery('iframe[src*="vimeo.com"]').wrap('<div class="embed-responsive embed-responsive-16by9"></div>');	
 		/* Video responsive function end */
+		if(event){
+		localStorage.setItem( 'video_link', event.target.href );
+		console.log(localStorage['video_link']);
+		}
 	}
 	
 	/* Gallery Filter ============ */

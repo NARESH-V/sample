@@ -87,7 +87,7 @@
 
 	<div class="page-content bg-white">
 		<!-- Banner  -->
-		<div class="dz-bnr-inr style-1 overlay-white-dark" style="background-image: url(images/banner/bnr1.jpg);">
+		<div class="dz-bnr-inr style-1 overlay-white-middle" style="background-image: url(images/banner-bg-1.jpg);">
 			<div class="container">
 				<div class="dz-bnr-inr-entry">
 					<h1>Live Streaming</h1>
@@ -108,7 +108,7 @@
 			<div class="container">
 				<div class="row mb-lg-5">
 					<div class="col-lg-12 col-md-12 m-b50 m-sm-b30 aos-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-						<iframe width="100%" height="600" src="https://www.youtube.com/embed/1J-6-ftZwJE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="100%" height="600" id="video_player" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					
 				</div>
@@ -141,6 +141,11 @@
 	<button class="scroltop icon-up" type="button"><i class="fas fa-arrow-up"></i></button>
 </div>
 <!-- JAVASCRIPT FILES ========================================= -->
+<script>
+	var link = localStorage.getItem('video_link');
+	document.getElementById("video_player").setAttribute("src", link)
+</script>
+
 <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP.MIN JS -->
 <script src="vendor/rangeslider/rangeslider.js"></script><!-- RANGESLIDER -->

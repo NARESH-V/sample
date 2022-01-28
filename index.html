@@ -87,7 +87,7 @@
 	<!-- Header End -->
 
 		<!-- Banner  -->
-		<div class="dz-bnr-inr style-1 overlay-white-dark" style="background-image: url(images/banner/bnr5.jpg);">
+		<div class="dz-bnr-inr style-1 overlay-white-middle" style="background-image: url(images/banner-bg-1.jpg);">
 			<div class="container">
 				<div class="dz-bnr-inr-entry">
 					<h1>Live Streaming</h1>
@@ -112,7 +112,7 @@
 								<div class="video-bx content-media style-1">
 									<img src="https://i.natgeofe.com/n/b9e9b8d1-fa08-4b90-96bb-310cace03847/meenakshi-amman-temple-india.jpg" alt="">
 									<div class="video-btn aos-item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" style="z-index: 1;">
-										<a href="video.html" class="popup-youtube"><i class="fa fa-play"></i></a>
+										<a href="video.html" id="https://www.youtube.com/embed/1J-6-ftZwJE" onclick="handleVideo(event)" class="popup-youtube"><i class="fa fa-play"></i></a>
 									</div>
 								</div>
 							<div class="dz-info">
@@ -127,7 +127,7 @@
 								<div class="video-bx content-media style-1">
 									<img src="https://1.bp.blogspot.com/-8cjUEBT4OFw/XoRIEqX4f_I/AAAAAAAAUAk/_mVEXut541UueLyJLWHS_-eKFWrZ_iTJgCLcBGAsYHQ/s1600/brihadeshwara.jpg" alt="">
 									<div class="video-btn aos-item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" style="z-index: 1;">
-										<a href="video.html" class="popup-youtube"><i class="fa fa-play"></i></a>
+										<a href="video.html" id="https://www.youtube.com/embed/9epMzzZoyh0" onclick="handleVideo(event)" class="popup-youtube"><i class="fa fa-play"></i></a>
 									</div>
 								</div>
 							<div class="dz-info">
@@ -142,7 +142,7 @@
 								<div class="video-bx content-media style-1">
 									<img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202105/Temple-TN-Jun7-1.jpg?xg3y0bvw3bcJ42N1xEFmsaSvxRo.UPH3&size=1200:675" alt="">
 									<div class="video-btn aos-item" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="200" style="z-index: 1;">
-										<a href="video.html" class="popup-youtube"><i class="fa fa-play"></i></a>
+										<a href="video.html" id="https://www.youtube.com/embed/jlmFgwU7RkY" onclick="handleVideo(event)" class="popup-youtube"><i class="fa fa-play"></i></a>
 									</div>
 								</div>
 							<div class="dz-info">
@@ -181,6 +181,14 @@
 	<button class="scroltop icon-up" type="button"><i class="fas fa-arrow-up"></i></button>
 </div>
 <!-- JAVASCRIPT FILES ========================================= -->
+<script>
+	var handleVideo = function(event){
+		if(event){
+		localStorage.setItem( 'video_link', event.currentTarget.id );
+		console.log(localStorage['video_link']);
+		}
+	}
+</script>
 <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script><!-- BOOTSTRAP.MIN JS -->
 <script src="vendor/rangeslider/rangeslider.js"></script><!-- RANGESLIDER -->
