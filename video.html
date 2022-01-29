@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="css/style.css">
 	
 	<link rel="stylesheet" href="vendor/rangeslider/rangeslider.css">
-	<link rel="stylesheet" class="skin" href="css/skin/skin-1.css">
+	<link rel="stylesheet" class="skin" href="css/skin/skin-2.css">
     
 </head>
 <body id="bg" class="theme-rounded">
@@ -52,8 +52,14 @@
 			<div class="main-bar clearfix ">
 				<div class="container-fluid clearfix">
 					<!-- Website Logo -->
-					<div class="logo-header mostion logo-dark">
-						<a href="index.html"><img src="images/logo.png" alt=""></a>
+					<div>
+						<div class="logo-header mostion logo-dark" >
+							<a href="index.html"><img src="images/logo.png" alt=""></a>	
+							<div>
+								<span class="logo-title">தமிழ்நாடு அரசு</span><br>
+								<span class="logo-slogan">இந்து சமய அறநிலையத்துறை</span>
+							</div>
+						</div>	
 					</div>
 					<!-- Nav Toggle Button -->
 					<button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,11 +96,11 @@
 		<div class="dz-bnr-inr style-1 overlay-white-middle" style="background-image: url(images/banner-bg-1.jpg);">
 			<div class="container">
 				<div class="dz-bnr-inr-entry">
-					<h1>Live Streaming</h1>
+					<h1>திருக்கோவில்கள்</h1>
 					<!-- Breadcrumb Row -->
 					<nav aria-label="breadcrumb" class="breadcrumb-row">
 						<ul class="breadcrumb">
-							<li class="breadcrumb-item">Temple Name</li>
+							<li class="breadcrumb-item">நேரடி ஒளிபரப்பு</li>
 						</ul>
 					</nav>
 					<!-- Breadcrumb Row End -->
@@ -108,7 +114,7 @@
 			<div class="container">
 				<div class="row mb-lg-5">
 					<div class="col-lg-12 col-md-12 m-b50 m-sm-b30 aos-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-						<iframe width="100%" height="600" id="video_player" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="100%" height="600" id="video_player" src="" title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					
 				</div>
@@ -124,14 +130,8 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="row align-items-center fb-inner spno">
-					<div class="col-lg-6 col-md-12 text-start"> 
-						<span class="copyright-text">Copyright © 2021 <a href="https://dexignzone.com/" class="text-primary" target="_blank">DexignZone</a> All rights reserved.</span>
-					</div>
-					<div class="col-lg-6 col-md-12 text-end"> 
-						<ul class="footer-link d-inline-block">
-							<li><a href="javascript:void(0);">Privacy Policy</a></li>
-							<li><a href="javascript:void(0);">Team &amp; Condition</a></li>
-						</ul>
+					<div class="col-lg-12 col-md-12 text-center"> 
+						<span class="copyright-text">Copyright © 2022 <a href="https://dexignzone.com/" class="text-primary" target="_blank">MENTOR INFOCOMM</a> All rights reserved.</span>
 					</div>
                 </div>
             </div>
@@ -143,6 +143,7 @@
 <!-- JAVASCRIPT FILES ========================================= -->
 <script>
 	var link = localStorage.getItem('video_link');
+	link = link + "?autoplay=1"
 	document.getElementById("video_player").setAttribute("src", link)
 </script>
 
